@@ -1,17 +1,50 @@
+html {
+	scroll-behavior: smooth;
+}
 body { 
+	margin: 20px;
 	font-family:"Hermit", sans-serif; 
 	text-align: left;
 	color: #000000
 }
+p {
+	text-align: center;
+	color: black;
+}
 h1{
+	margin-bottom: 0px;
+	font-size: 50px;
+    	color: green;
+	text-align: center;
+}
+h2{
+	margin-top: 10px;
 	font-size: 35px;
     	color: green;
 }
-h2{
-	font-size: 25px;
-    	color: green;
-	text-align: left;
+
+h3, h4, h5, h6 {
+	font-family: "Raleway";
+	font-weight: 300;
+	color: green;
 }
+text1{
+	margin-top: 0;
+	font-size: 22px;
+	color: green;
+	text-align: center;
+}
+text2{
+	font-size: 22px;
+	color: black;
+	text-align: center;
+}
+text3{
+	font-size: 22px;
+	color: green;
+}
+
+
 img {
 	max-width:70%;
 	max-height:70%;
@@ -20,6 +53,26 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
+}
+
+img-logo {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+
+.fwh-slide {
+	margin-top: 5em;
+	height: 100vh;
+	box-sizing: border-box;
+}
+.btm-slide {
+	height: 5vh;
+	box-sizing: border-box;
+}
+.fwh-slide h1 {
+	margin: 0;
 }
 
 .center {
@@ -34,18 +87,20 @@ img {
 	position: fixed;
 	z-index: 1;
 	top: 0;
-	left: 0;
+	left: 0;	
 	background-color: #111;
 	overflow-x: hidden;
 	padding-top: 180px;
 	text-align: center;
     }
 .sidenav a {
+
 	padding: 10px 12px 6px 16px;
 	text-decoration: none;
 	font-size: 26px;
 	color: green;
-	display: block;	
+	display: block;
+	margin: 10px;		
     }
 .sidenav a:hover {
     color: white;	
@@ -54,11 +109,10 @@ img {
 	margin-left: 260px; /* Same as the width of the sidenav */
 	font-size: 20px; /* Increased text to enable scrolling */
 	padding: 0px 10px;
+	width: 80%;
+	height: 50%;
 }
 @media screen and (max-height: 450px) {
 	.sidenav {padding-top: 15px;}
 	.sidenav a {font-size: 18px;}
-}
-p {
-  color: red;
 }

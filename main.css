@@ -2,7 +2,7 @@ html {
 	scroll-behavior: smooth;
 }
 body { 
-	margin: 50px;
+	margin: 60px;
 	font-family:"Hermit", sans-serif; 
 	text-align: left;
 	color: #000000
@@ -48,7 +48,7 @@ text2{
 	text-align: center;
 }
 text3{
-	font-size: 22px;
+	font-size: 28px;
 	color: black;
 	text-align: right;
 }
@@ -125,4 +125,3 @@ img-logo {
 	.sidenav {padding-top: 15px;}
 	.sidenav a {font-size: 18px;}
 }
-

@@ -22,8 +22,14 @@ h2{
 	font-size: 45px;
     	color: green;
 }
+h3{
+	margin-top: 5px;
+	margin-bottom: -25px;
+	font-size: 22px;
+    	color: black;
+}
 
-h3, h4, h5, h6 {
+h4, h5, h6 {
 	font-family: "Raleway";
 	font-weight: 300;
 	font-size: 30px;
@@ -42,10 +48,14 @@ text1_0{
 	color: green;
 	text-align: center;
 }
+div.d {
+	text-align: justify;
+	text-justify: inter-word;
+} 
 text2{
+	text-align: center;
 	font-size: 22px;
 	color: black;
-	text-align: center;
 }
 text3{
 	font-size: 28px;
@@ -112,8 +122,25 @@ img-logo {
 	margin: 10px;		
     }
 .sidenav a:hover {
-    color: white;	
+    color: white;
+    text-decoration: underline;	
 }
+.sidenav a:visited {
+    color: green;	
+}
+a:link, a:visited{
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover{
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
 .main {
 	margin-left: 260px; /* Same as the width of the sidenav */
 	font-size: 20px; /* Increased text to enable scrolling */
@@ -125,3 +152,4 @@ img-logo {
 	.sidenav {padding-top: 15px;}
 	.sidenav a {font-size: 18px;}
 }
+

@@ -4,5 +4,5 @@ My personal page has been writen entirely by me, neverless I took inspiration by
   
 The code is completely opensource, feel free to download it and modify at your wish.
 
-Bests,
+Bests,<br/>
 Michele

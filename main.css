@@ -2,6 +2,7 @@ html {
 	scroll-behavior: smooth;
 }
 body { 
+	background-image: url("fig/website_background.png");
 	margin: 60px;
 	font-family:"Hermit", sans-serif; 
 	text-align: left;
@@ -72,6 +73,7 @@ text3{
 
 
 img {
+	opacity: 1;
 	max-width:70%;
 	max-height:70%;
 	border-radius: 50%;
@@ -79,6 +81,9 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
+}
+img:hover {
+	opacity: 0.7;
 }
 
 img-logo {
@@ -169,7 +174,7 @@ a:hover{
 
 /* photo gallery */
 div.gallery {
-  border: 2px solid #ccc;
+  border: 1px solid #ccc;
 }
 
 div.gallery:hover {

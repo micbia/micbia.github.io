@@ -5,5 +5,6 @@ My personal webpage has been writen entirely by me, neverless I took inspiration
   
 The code is completely opensource, feel free to download it and modify at your wish.
 
-Bests,<br/>
+
+Cheers,<br/>
 Michele

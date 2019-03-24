@@ -3,8 +3,6 @@ My personal webpage has been writen entirely by me, neverless I took inspiration
   - www.w3schools.com
   - www.stackoverflow.com/questions
   
-The code is completely opensource, feel free to download it and modify at your wish.
-
-
+The code is completely opensource, feel free to download it and modify at your wish.<br/><br/><br/>
 Cheers,<br/>
 Michele

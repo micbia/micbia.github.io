@@ -73,6 +73,8 @@ text3{
 
 
 img {
+	width: 100%;
+	height: auto;
 	opacity: 1;
 	max-width:70%;
 	max-height:70%;
@@ -80,7 +82,7 @@ img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 90%;
+	/*width: 90%; */
 }
 img:hover {
 	opacity: 0.7;
@@ -217,10 +219,15 @@ div.desc {
 }
 
 .clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
-
+/* resize images depending browser screen */
+.center-fit {
+	max-width: 100%;
+	max-height: 100vh;
+	margin: auto;
+}
 

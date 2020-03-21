@@ -5,10 +5,14 @@
 		<link rel="stylesheet" href="main.css">
 	</head>
 	<body>	
-		<div class="sidenav">
-						
+		<div class="sidenav">			
 			<a href="#about"><img src="fig/me_stonehenge.jpg" alt="Michele"><br/>About</a>
-			<a href="#projects">Projects</a>
+			<a_db class="dropdown-btn"><a href="#projects">Projects</a> </a_db>
+				<div class="dropdown-container">
+				<a href="#">Link 1</a>
+				<a href="downloads.html">SegNet3D</a>
+				<a href="project1.html">DECI-14</a>
+				</div>
 			<a href="#education">Education</a>
 			<a href="#training">Training</a>
 			<a href="#skills">Skills</a>
@@ -44,7 +48,7 @@
 <br/><br/>
 
 			<h3>DECI-14 - The impact of inhomogeneous subgrid clumping on cosmic reionization II: modelling stochasticity</h3><br/><br/>
-	  		Currently there is no ab-initio model that can quantify the effect of small-scale density fluctuations on the local recombinations below the resulution of a numerical simulation. Instead, this is described through a gas <i>Clumping Factor</i>, which can be fit or modelled. Typically, a globally averaged mean factor, with no regards for inhomogeneous distribution, has been used.<br/> Previously, in <a target="_blank" href="https://arxiv.org/abs/1906.02476">Mao et al. 2019 (Paper I)</a> we presented a more general model for the sub-grid gas clumping, whereby it is determined by the local density. In this work we extend this further, using an empirical stochastic model based on the results from high-resolution numerical simulations, where the relevant fluctuations are fully resolved. Our model reproduces well both the mean density-clumping relation and its scatter. We applied our model to create large-volume (349 Mpc and 714 Mpc per side) realisations of the clumping field, and used these to study the effect of the different approaches to clumping modelling in radiative transfer simulations of Cosmic Reionization. (M. Bianco et al 2020, in prep.).
+				Previously, in <a target="_blank" href="https://arxiv.org/abs/1906.02476">Mao et al. 2019 (Paper I)</a> we presented a more general model for the sub-grid gas <i>Clumping Factor</i>, determined by the local density, to quantify the effect of small-scale density fluctuations on the local recombinations. In this work we extend this further, using an empirical stochastic model based on the results from high-resolution numerical simulations, where the relevant fluctuations are fully resolved. Our model reproduces well both the mean density-clumping relation and its scatter. We applied our model to create large-volume (349 Mpc and 714 Mpc per side) realisations of the clumping field, and used these to study the effect of the different approaches to clumping modelling in radiative transfer simulations of Cosmic Reionization. (M. Bianco et al 2020, in prep.).
 			<br/><br/><br/>
 
 			<div class="responsive"><div class="gallery">
@@ -150,6 +154,23 @@
 		</section>
 
 		</div>
+	
+		<script>
+		/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
 
+		for (i = 0; i < dropdown.length; i++) {
+		  dropdown[i].addEventListener("click", function() {
+		  this.classList.toggle("active");
+		  var dropdownContent = this.nextElementSibling;
+		  if (dropdownContent.style.display === "block") {
+		  dropdownContent.style.display = "none";
+		  } else {
+		  dropdownContent.style.display = "block";
+		  }
+		  });
+		}
+		</script>
 	</body>
 </html> 

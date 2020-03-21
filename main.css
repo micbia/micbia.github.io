@@ -123,24 +123,27 @@ img-logo {
 	background-color: #111;
 	overflow-x: hidden;
 	padding-top: 180px;
-	text-align: center;
     }
-.sidenav a {
 
+.sidenav a, .dropdown-btn a_db{
 	padding: 10px 12px 6px 16px;
+	background: none;
 	text-decoration: none;
 	font-size: 26px;
 	color: green;
-	display: block;
-	margin: 10px;		
-    }
-.sidenav a:hover {
-    color: white;
-    text-decoration: underline;	
+	border: none;
+	display: block;	
+	cursor: pointer;
+	text-align: center;
 }
-.sidenav a:visited {
-    color: green;	
+
+.sidenav a:hover, .dropdown-btn a_db:hover {
+	color: white;
+	font-size: 28px;
+	text-decoration: none;
 }
+
+
 a:link, a:visited{
   color: green;
   background-color: transparent;
@@ -148,20 +151,27 @@ a:link, a:visited{
 }
 
 a:hover{
-  color: blue;
-  background-color: transparent;
-  text-decoration: underline;
+	color: blue;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+	display: none;
+	background-color: #262626;
+	padding-left: 8px;
 }
 
 .column {
-  float: left;
-  width: 10%;
-  padding: 5px;
+	float: left;
+	width: 10%;
+	padding: 5px;
 }
 .row::after {
-  content: "";
-  clear: both;
-  display: table;
+	content: "";
+	clear: both;
+	display: table;
 }
 
 .main {
@@ -175,31 +185,31 @@ a:hover{
 
 /* photo gallery */
 div.gallery {
-  border: 1px solid #ccc;
+	border: 1px solid #ccc;
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+	border: 1px solid #777;
 }
 
 div.gallery img {
-  width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
 }
 
 div.desc {
-  padding: 15px;
-  text-align: center;
+	padding: 15px;
+	text-align: center;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .responsive {
-  padding: 0 4px;
-  float: right;
-  width: 30%;
+	padding: 0 4px;
+	float: right;
+	width: 30%;
 }
 
 @media screen and (max-width: 700px) {

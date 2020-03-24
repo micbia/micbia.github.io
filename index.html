@@ -3,15 +3,15 @@
 	<head>
 		<title>Michele Bianco Webpage</title>
 		<link rel="stylesheet" href="main.css">
-		<script src="date.js"></script>
+
 	</head>
 	<body>	
 		<div class="sidenav">			
 			<a href="#about"><img src="fig/me_stonehenge.jpg" alt="Michele"><br/>About</a>
 			<a_db class="dropdown-btn"><a href="#projects">Projects</a> </a_db>
 				<div class="dropdown-container">
-				<a href="#">Link 1</a>
-				<a href="downloads.html">SegNet3D</a>
+				<a href="project3.html">AltCosm</a>
+				<a href="project2.html">SegNet3D</a>
 				<a href="project1.html">DECI-14</a>
 				</div>
 			<a href="#education">Education</a>
@@ -42,26 +42,29 @@
 		<section class="fwh-slide">
 			<h2 id="projects"> </h2>
 			<br/><br/><br/><br/>
+			
 			<h2>Current & Past Projects</h2>
-			List of projects that I took part or that are still going on. This page is constantly under custruction in order to show resutls up to date.<br/><br/><br/>
+			List of projects that I took part or that are still going on.<br/><br/>
+
 			<div class="responsive"><div class="gallery">
-			    <a href="downloads.html">
-			      <img src="fig/project3" alt="photo1" style="width:225px;height:225px;border-radius:0px;">
-			    </a> <div class="desc"><b>Ongoing project</b><br/>Alternative cosmology for the Epoch of Reionization</div>
+			    <a href="project3.html"><img src="fig/project3" alt="photo1" style="width:225px;height:225px;border-radius:0px;"></a> 
+				<div class="desc"><b>AltCosmEoR</b><br/>Study the effect of alternative cosmology on the observable of the Epoch of Reionization</div>
 			</div></div>
 			
 			<div class="responsive"><div class="gallery">
-			    <a href="downloads.html">
-			      <img src="fig/project2/valid_prediction.png" alt="photo2" style="width:100%;height:225px;border-radius:0px;">
-			    </a> <div class="desc"><b>SegNet3D</b><br/>Neural network to identify ionised region during early stage of the cosmic reionization</div>
+			    <a href="project2.html"><img src="fig/project2/valid_prediction.png" alt="photo2" style="width:100%;height:225px;border-radius:0px;"></a>
+				<div class="desc"><b>SegNet3D</b><br/>Neural network to identify ionised region during early stage of the cosmic reionization</div>
 			</div></div>
 
 			<div class="responsive"><div class="gallery">
-			    <a href="project1.html">
-			      <img src="fig/project1/plot_SL176_CoolMovie_dT_B2km.png" alt="photo3" style="width:400px;height:200px;border-radius:0px;">
-			    </a> <div class="desc"><b>DECI-14</b><br/>The impact of inhomogeneous subgrid clumping on cosmic reionization II: modelling stochasticity</div>
+			    <a href="project1.html"><img src="fig/project1/plot_SL176_CoolMovie_dT_B2km.png" alt="photo3" style="width:400px;height:200px;border-radius:0px;"></a>
+				<div class="desc"><b>DECI-14</b><br/>The impact of inhomogeneous subgrid clumping on cosmic reionization II: modelling stochasticity</div>
 			</div></div>
+
 			<div class="clearfix"></div>
+			<br/><br/>
+			<u>Updated:</u> <span id="datetime"></span>
+
 
 		</section>
 
@@ -164,5 +167,12 @@
 		  });
 		}
 		</script>
+
+		<script>
+		/* Date time script */
+		var dt = new Date();
+		document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+		</script>
+
 	</body>
 </html> 

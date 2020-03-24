@@ -191,14 +191,14 @@ a:hover{
 
 .gallery img {
 	transition: 1s;
-	padding: 15px;
+	padding: 1px;
 	width: 200px;
 	height: auto;
 }
 
 .gallery:hover {
-	transform: scale(1.01);
-	filter: grayscale(100);
+	transform: scale(1.1);
+	filter: contrast(160%);
 }
 
 div.desc {

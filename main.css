@@ -184,17 +184,21 @@ a:hover{
 
 
 /* photo gallery */
-div.gallery {
+.gallery {
+	margin: 10px 50px;
 	border: 1px solid #ccc;
 }
 
-div.gallery:hover {
-	border: 1px solid #777;
+.gallery img {
+	transition: 1s;
+	padding: 15px;
+	width: 200px;
+	height: auto;
 }
 
-div.gallery img {
-	width: 100%;
-	height: auto;
+.gallery:hover {
+	transform: scale(1.01);
+	filter: grayscale(100);
 }
 
 div.desc {

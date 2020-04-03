@@ -271,3 +271,32 @@ div.desc {
 	margin: auto;
 }
 
+table, th, td {
+	border: 1px solid transparent;
+	/* 
+	border-collapse: collapse;
+	border-spacing: 1px;
+	*/
+	height: 200px;
+	width: 269px;
+  }
+
+/* Create two equal columns that floats next to each other */
+.column {
+	float: left;
+	width: 20%;
+	padding: 0px;
+  }
+  
+  .column img {
+	margin-top: 1px;
+	margin-left: 1px;
+	margin-right: 1px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }

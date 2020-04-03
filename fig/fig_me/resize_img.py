@@ -2,13 +2,14 @@ from PIL import Image
 from glob import glob
 import numpy as np, os
 
-arr_img = glob('*.jpg')
 
 max_h = 200
 try:
     os.system('rm *_small*')
 except:
     pass
+
+arr_img = glob('*.jpg')
 
 for img_name in arr_img:
     img = Image.open(img_name)

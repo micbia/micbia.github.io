@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Michele Bianco Webpage - Downloads</title>
+		<title>Michele Bianco Webpage - Projects</title>
 		<link rel="stylesheet" href="main.css">
 		<link rel="stylesheet" href="lightbox.min.css">
 		<script src="lightbox-plus-jquery.min.js"></script>
-
 	</head>
 	<body>
 		<div class="sidenav">
@@ -17,21 +16,38 @@
 			<a href="index.html#interests">Interests</a>
 		</div>
 
-
 		<div class="main">
 		<section class="fwh-slide">
+			<h2>Model Recombination in Large EoR Simulation</h2> 
+			<h3>DECI-14: The impact of inhomogeneous subgrid clumping on cosmic reionization II: modelling stochasticity</h3>
+			<br/><br/>
+			<div class='d'>
+			<a href="fig/project1/plot244c.png" data-lightbox="mygallery" data-title="Realization of clumping factor for LB-1 at different redshift."><img src="fig/project1/plot_z7.305.png" align=right alt="plot244c" style="width:350px;height:300px;border-radius:0px;"></a>
+			Previously, in <a target="_blank" href="https://arxiv.org/abs/1906.02476">Mao et al. 2019 (Paper I)</a> we presented a more general model for the sub-grid gas 
+            <i>Clumping Factor</i>, determined by the local density, aim to quantify the effect of small-scale density fluctuations on the local recombinations.
+            In my work <a href="https://arxiv.org/abs/2101.01712">(Bianco et al. 2021)</a> we extend this further, using an <b>empirical Stochastic Model (SC)</b> based on the results from high-resolution numerical simulations, where the relevant fluctuations are fully resolved. 
+            Our model reproduces well both the mean density-clumping relation and its scatter.
+            <br/><br/>
+            In the figure, the realization of the clumping field realization for a simulated volume of <b>714 Mpc</b> per side, the horizontal line (solid black) is the <b>globally averaged clumping factor (BHC)</b>. In red the one-to-one fit (Inhomogeneous Clumping) from our previous work. The green area indicates the realization estimated by our stochastic model, while the blue error bar points represent its expected value and standard deviation. Crosspoints are the coarse the small high-resolution N-body data used to calibrate the model parameters.
 
-			<h2>DECI-14</h2>
-			<h3>The impact of inhomogeneous subgrid clumping on cosmic reionization II: modelling stochasticity</h3>
-			<br/><br/>
-			Previously, in <a target="_blank" href="https://arxiv.org/abs/1906.02476">Mao et al. 2019 (Paper I)</a> we presented a more general model for the sub-grid gas <i>Clumping Factor</i>, determined by the local density, that aim to quantify the effect of small-scale density fluctuations on the local recombinations.<br/><br/>In this work we extend this further, using an empirical stochastic model based on the results from high-resolution numerical simulations, where the relevant fluctuations are fully resolved. Our model reproduces well both the mean density-clumping relation and its scatter.<br/><br/>We applied our model to create large-volume (349 Mpc and 714 Mpc per side) realisations of the clumping field, and used these to study the effect of the different approaches to clumping modelling in radiative transfer simulations of Cosmic Reionization.<br/><br/>Pending paper (M. Bianco et al 2020, in prep.).
-			<br/><br/>
+            Full list of the parameters use for the Stochastic Model are free to download: <a href="fig/project1/tables_2101.01712.pdf">Parameters Table PDF</a>
+            <br/><br/>
+            Subsequently, we post-processed with the <TT>C2Ray</TT> radiative transfer code to study the effect of the different approaches to clumping modelling in simulations of Cosmic Reionization.
+            The animation below (doubel click for full screen) shows the residual neutral gas in IGM in our simulations at reionization end (z&#8771;6.5). We compare the globally averaged clumping method <b>BHC</b> (left) with our Stochastic Clumping model <b>SC</b> (right).
+			<br/> 
+
+			<video class="center" width="800" height="320" controls>
+				<source src="fig/project1/3Dmovie_compare_BHCvsSC.avi" type="video/avi">
+				<source src="fig/project1/3Dmovie_compare_BHCvsSC.ogg" type="video/ogg">
+				Your browser does not support the video tag.
+			</video>
+
+			<!--	
 			&#9654;&emsp;<a href="fig/project1/plot244c.png" data-lightbox="mygallery" data-title="Realization of clumping factor for the 349 Mpc box">Figure 1:</a>&emsp;Realization of clumping factor for LB-1 box (349 Mpc) at different redshifts. See Paper II for more details (in preparation).<br/>
 			&#9654;&emsp;<a href="fig/project1/plot500c.png" data-lightbox="mygallery" data-title="Realization of clumping factor for the 714 Mpc box">Figure 2:</a>&emsp;Realization of clumping factor for LB-2 box (714 Mpc) at different redshifts. See Paper II for more details (in preparation).<br/>
 			&#9654;&emsp;<a href="fig/project1/xi_comparison_for_paper_large.png" data-lightbox="mygallery" data-title="714 Mpc box slice comparison of the ionization fraction ">Figure 3:</a>&emsp;Box slice comparison of LB-2 ionization fraction for different clumping approach.<br/>
-			<br/><br/>
-
-			<a href="fig/project1/tables.pdf">Parameters Table PDF</a>
+			<br/><br/>-->
+			</div>
 		</section>
 
 		</div>

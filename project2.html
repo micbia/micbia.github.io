@@ -21,14 +21,29 @@
 		<div class="main">
 		<section class="fwh-slide">
 
-			<h2>Segmentation Network 3D</h2>
-			<h3></h3>
+			<h2>21cm Segmentation Network, SegU-Net</h2>
+			<h3>Deep learning approach for identification of HII regions during reionization in 21-cm observations.</h3>
 			<br/><br/>
-			Description of the project here
+			<div class='d'>
+				In coming years, the square kilometre array (SKA) will come online, the largest telescope in the world.
+				The SKA will map the distribution neutral hydrogen on our sky at different redshift and produce tremendous amount of 3D image data. These tomographic images will
+				be prone to instrumental limitations, such as noise, limited resolution and foreground contamination. Hence a stable and reliable method for neutral/ionized 
+				region identification is not trivial.<br/><br/>
+				We therefore developed a <b>convolutional neural network</b> for 21-cm image segmentation, named <a target="_blank" href="https://github.com/micbia/SegU-Net">SegU-Net</a>.<br/><br/>
+				Our network is able to identify the ionized region from noisy data with greater precision and is less sensitive to the limitation of previous methods. 
+				The animation below shows SegU-Net layers output for the test case of a sphere with a noise level that reflet the SKA1-Low setup <a target="_blank" href="https://academic.oup.com/mnras/article/464/2/2234/2404629">(Ghara et al. 2017)</a>.
 			<br/><br/>
-			&#9654;&emsp;<a href="fig/project2/" data-lightbox="mygallery" data-title="title">Figure 1:</a>&emsp;Description.<br/>
-			&#9654;&emsp;<a href="fig/project2/" data-lightbox="mygallery" data-title="title">Figure 2:</a>&emsp;Description.<br/>
-			&#9654;&emsp;<a href="fig/project1/" data-lightbox="mygallery" data-title="title">Figure 3:</a>&emsp;Description.<br/>
+			<!--
+			<video class="center" width="1000" height="500" controls>
+				<source src="fig/project2/segunet_movie.avi" type="video/avi">
+				<source src="fig/project2/segunet_movie.ogg" type="video/ogg">
+				Your browser does not support the video tag.
+			</video>
+			-->
+			<img src="fig/project2/segunet_movie.gif" alt="segunet movie" style="width:750px;height:550px;border-radius:0px;">
+			<!-- lightbox-plus-jquerya href="fig/project2/LC_dTb.png" data-lightbox="mygallery" data-title="Slice of a simulated tomographic ligthcone. The redshift evolution of the 21cm signal, observed by radio telescope, is quantified by the differential brightness $\rm\delta T_b$. On the y-axis the box size in comovig Megaparsec ($\rm Mpc$) for given redshift, x-axis."><img src="fig/project2/LC_dTb.png" align=center alt="plot244c" style="width:800px;height:200px;border-radius:0px;"></a>
+			-->
+			</div>
 			<br/><br/>
 
 		</section>

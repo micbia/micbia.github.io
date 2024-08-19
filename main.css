@@ -186,6 +186,11 @@ a:hover{
 	height: 50%;
 }
 
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-gap: 20px; /* Adjust the gap between items */
+}
 
 /* photo gallery */
 .gallery {
@@ -196,7 +201,7 @@ a:hover{
 .gallery img {
 	border-radius: 0%;
 	transition: 1s;
-	padding: 15px;
+	padding: 5px;
 	width: 200px;
 	height: auto;
 }

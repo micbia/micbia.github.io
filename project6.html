@@ -21,13 +21,19 @@
 		<div class="main">
 		<section class="fwh-slide">
 
-			<h2>Physic Informed Neural Network for EoR Simulations</h2>
-			<h3>Can Artificial Intelligence speedup the expensinve fully-numerical simulation for the Epoch of Reionization?</h3>
+			<h2>The <TT>pyC<sup>2</sup>Ray</TT> code</h2>
+			<h3>A flexible and GPU-accelerated Radiative Transfer Framework for Simulating the Cosmic Epoch of Reionization</h3>
 			<br/><br/>
 			<div class='d'>
-			Cosmological parameters in numerical simulation for the Epoch of Reionization are essentially taken for absolute. An ongoing question is how variations of &Lambda;CDM parameters will affect the reionization history in simulations.
-			<a href="fig/project3/watson13_z20.000.png" data-lightbox="mygallery" data-title="Halo mass function at z = 20"><img src="fig/project3/watson13_z20.000.png" align=right alt="plot244c" style="width:450px;height:380px;border-radius:0px;"></a>
-			<br/><br/>
+			Detailed modeling of the evolution of neutral hydrogen in the intergalactic medium during the Epoch of Reionization, 5 ≤ z ≤ 20, is critical in interpreting the cosmological signals from current and upcoming 21-cm experiments such as the Low-Frequency Array (LOFAR) and the Square Kilometre Array (SKA).
+			<a href="fig/project6/speedup_sources_GPUs.png" data-lightbox="mygallery" data-title="he ASORA algorithm "><img src="fig/project6/speedup_sources_GPUs.png" align=right alt="plot244c" style="width:450px;height:380px;border-radius:0px;"></a><br/><br/>
+
+			Numerical radiative transfer codes provide the most physically accurate models of the reionization process. However, they are computationally expensive as they must encompass enormous cosmological volumes and high mass resolution (< 10<sup>8</sup> M<sub>&#9737;</sub>), while accurately capturing astrophysical processes occurring at small scales (≲ Mpc). Here, we present pyC2 Ray, an updated version of the massively parallel ray-tracing and chemistry code, C2Ray, which has been extensively employed in reionization simulations. The most time-consuming part of the code is calculating the hydrogen column density along the path of the ionizing photons. Here, we present the <b>A</b>ccelerated <b>S</b>hort-characteristics <b>O</b>ctahedral <b>RA</b>y-tracing (<b><TT>ASORA</TT></b>) method, a ray-tracing algorithm specifically designed to run on graphical processing units (GPUs).<br/><br/>
+
+			
+			We include a modern Python interface, allowing easy and customized use of the code without compromising computational efficiency. We test pyC2Ray on a series of standard ray-tracing tests and a complete cosmological simulation with volume size (349 cMpc)<sup>3</sup>, mesh size of 250<sup>3</sup> and approximately 10<sup>6</sup> sources. Compared to the original code, pyC<sup>2</sup>Ray achieves the same results with negligible fractional differences, 10<sup>-5</sup>, and a speedup factor of two orders of magnitude. Benchmark analysis shows that ASORA takes a few nanoseconds per source per voxel and scales linearly for an increasing number of sources and voxels within the ray-tracing radii.
+
+
 			More recent result on local measurement of local cosmology <a target="_blank" href="https://iopscience.iop.org/article/10.3847/1538-4357/ab1422">Riess et al. (2019)</a> are in disagreement with value inferred from CMB experiment 
 			<a target="_blank" href="https://www.aanda.org/articles/aa/abs/2020/09/aa33910-18/aa33910-18.html">Planck ollaboration (2018)</a>, raising the tension beyond a plausible level of odds. The inferred initial condition increases of a few 
 			order of magnitude the Halos distribution for masses above 10<sup>9</sup> M<sub>&#9737;</sub> at high redshift <a target="_blank" href="https://academic.oup.com/mnras/article/433/2/1230/1747663">Watson (2013)</a>. <br/><br/>

@@ -2,7 +2,6 @@ from PIL import Image
 from glob import glob
 import numpy as np, os
 
-
 max_h = 200
 try:
     os.system('rm *_small*')
@@ -19,7 +18,7 @@ for img_name in arr_img:
 
     print(img_name+'\n', h, w, '\t-->\t', max_h, max_w)
 
-    img_small = img.resize((max_w, max_h), Image.ANTIALIAS)
+    img_small = img.resize((max_w, max_h))
 
     new_img_name = img_name[:img_name.rfind('.jpg')]+'_small.jpg'
     img_small.save(new_img_name)

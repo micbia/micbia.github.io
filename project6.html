@@ -9,14 +9,13 @@
 	</head>
 	<body>
 		<div class="sidenav">
-			<a href="index.html#about"><img src="fig/me_stonehenge.jpg" alt="Michele"><br/>About</a>
-			<a href="index.html#projects">Projects</a>
+			<a href="index.html#about"><img src="fig/profile.jpeg" alt="Michele"><br/>About</a>
+			<a href="index.html#projects">Research</a>
 			<a href="index.html#education">Education</a>
-			<a href="index.html#training">Training</a>
-			<a href="index.html#skills">Skills</a>
+			<!--<a href="index.html#training">Training</a> -->
+			<!--  <a href="#skills">Skills</a> -->
 			<a href="index.html#interests">Interests</a>
 		</div>
-		
 		
 		<div class="main">
 		<section class="fwh-slide">
@@ -28,29 +27,16 @@
 			Detailed modeling of the evolution of neutral hydrogen in the intergalactic medium during the Epoch of Reionization, 5 ≤ z ≤ 20, is critical in interpreting the cosmological signals from current and upcoming 21-cm experiments such as the Low-Frequency Array (LOFAR) and the Square Kilometre Array (SKA).
 			<a href="fig/project6/speedup_sources_GPUs.png" data-lightbox="mygallery" data-title="he ASORA algorithm "><img src="fig/project6/speedup_sources_GPUs.png" align=right alt="plot244c" style="width:450px;height:380px;border-radius:0px;"></a><br/><br/>
 
-			Numerical radiative transfer codes provide the most physically accurate models of the reionization process. However, they are computationally expensive as they must encompass enormous cosmological volumes and high mass resolution (< 10<sup>8</sup> M<sub>&#9737;</sub>), while accurately capturing astrophysical processes occurring at small scales (≲ Mpc). Here, we present pyC2 Ray, an updated version of the massively parallel ray-tracing and chemistry code, C2Ray, which has been extensively employed in reionization simulations. The most time-consuming part of the code is calculating the hydrogen column density along the path of the ionizing photons. Here, we present the <b>A</b>ccelerated <b>S</b>hort-characteristics <b>O</b>ctahedral <b>RA</b>y-tracing (<b><TT>ASORA</TT></b>) method, a ray-tracing algorithm specifically designed to run on graphical processing units (GPUs).<br/><br/>
+			Numerical radiative transfer codes provide the most physically accurate models of the reionization process. However, they are computationally expensive as they must encompass enormous cosmological volumes and high mass resolution (< 10<sup>8</sup> M<sub>&#9737;</sub>), while accurately capturing astrophysical processes occurring at small scales (≲ Mpc). Here, we present pyC<sup>2</sup>Ray, an updated version of the massively parallel ray-tracing and chemistry code, C<sup>2</sup>Ray, which has been extensively employed in reionization simulations. The most time-consuming part of the code is calculating the hydrogen column density along the path of the ionizing photons. Here, we present the <b>A</b>ccelerated <b>S</b>hort-characteristics <b>O</b>ctahedral <b>RA</b>y-tracing (<b><TT>ASORA</TT></b>) method, a ray-tracing algorithm specifically designed to run on graphical processing units (GPUs).<br/><br/>
 
 			
-			We include a modern Python interface, allowing easy and customized use of the code without compromising computational efficiency. We test pyC2Ray on a series of standard ray-tracing tests and a complete cosmological simulation with volume size (349 cMpc)<sup>3</sup>, mesh size of 250<sup>3</sup> and approximately 10<sup>6</sup> sources. Compared to the original code, pyC<sup>2</sup>Ray achieves the same results with negligible fractional differences, 10<sup>-5</sup>, and a speedup factor of two orders of magnitude. Benchmark analysis shows that ASORA takes a few nanoseconds per source per voxel and scales linearly for an increasing number of sources and voxels within the ray-tracing radii.
-
-
-			More recent result on local measurement of local cosmology <a target="_blank" href="https://iopscience.iop.org/article/10.3847/1538-4357/ab1422">Riess et al. (2019)</a> are in disagreement with value inferred from CMB experiment 
-			<a target="_blank" href="https://www.aanda.org/articles/aa/abs/2020/09/aa33910-18/aa33910-18.html">Planck ollaboration (2018)</a>, raising the tension beyond a plausible level of odds. The inferred initial condition increases of a few 
-			order of magnitude the Halos distribution for masses above 10<sup>9</sup> M<sub>&#9737;</sub> at high redshift <a target="_blank" href="https://academic.oup.com/mnras/article/433/2/1230/1747663">Watson (2013)</a>. <br/><br/>
-			These halos host star-forming galaxies that are unaffected by the radiative feedback, and therefore are the main driver of the cosmic 
-			reaionization. Any alteration of their number density is expected to modify ionizing photon budget required by the hosted 
-			sources to complete reionization. <br/><br/>The aim of this project is to have an additional probe to help solve the current Hubble tension. 
-			To do so, I am planning to run a series of N-body simulations, performed with the <TT>CUBEP3M</TT> code <a target="_blank" href="https://academic.oup.com/mnras/article/436/1/540/974200">Harnois-Deraps et al. (2013)</a>, 
-			and post-process with <TT>Grizzly</TT>, one dimensional RT code, in order to reproduce large scale observable, detectable by upcoming EoR experiment.</div><br/><br/>
-			
-			<!--
-							&#9654;&emsp;<a href="fig/project2/" data-lightbox="mygallery" data-title="title">Figure 1:</a>&emsp;Description.<br/>
-			&#9654;&emsp;<a href="fig/project2/" data-lightbox="mygallery" data-title="title">Figure 2:</a>&emsp;Description.<br/>
-			&#9654;&emsp;<a href="fig/project1/" data-lightbox="mygallery" data-title="title">Figure 3:</a>&emsp;Description.<br/>
+			We include a modern Python interface, allowing easy and customized use of the code without compromising computational efficiency. We test pyC2Ray on a series of standard ray-tracing tests and a complete cosmological simulation with volume size (349 cMpc)<sup>3</sup>, mesh size of 250<sup>3</sup> and approximately 10<sup>6</sup> sources. Compared to the original code, pyC<sup>2</sup>Ray achieves the same results with negligible fractional differences, 10<sup>-5</sup>, and a speedup factor ut to three orders of magnitude, depending on the GPU architectures, reducing the computational cost and carbon footprint of computationally.
 			<br/><br/>
-			-->
+			
+			Visit the <a target="_blank" href="https://pyc2ray.readthedocs.io/">pyC<sup>2</sup>Ray documentation</a> for tutorials and walktrough.
 
-
+		</div>
+		<br/><br/>
 		</section>
 
 		</div>
